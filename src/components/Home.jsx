@@ -31,6 +31,15 @@ export default function Home() {
                         <li>
                             <Link className='link' to="/flight">Flight Booker</Link>
                         </li>
+                        <li>
+                            <Link className='link' to="/table">Generate Table</Link>
+                        </li>
+                        <li>
+                            <Link className='link' to="/temperature">Temperature</Link>
+                        </li>
+                        <li>
+                            <Link className='link' to="/tweet">Tweet</Link>
+                        </li>
                     </ul>
                 </div>
                 <div>
@@ -41,6 +50,21 @@ export default function Home() {
                         </li>
                         <li>
                             <Link className='link' to="/counttimer">Count + Timer</Link>
+                        </li>
+                        <li>
+                            <Link className='link' to="/tabs">Tabs</Link>
+                        </li>
+                        <li>
+                            <Link className='link' to="/datatable">Data Table</Link>
+                        </li>
+                        <li>
+                            <Link className='link' to="/rolldice">Dice Roller</Link>
+                        </li>
+                        <li>
+                            <Link className='link' to="/directorytree">Directory Tree</Link>
+                        </li>
+                        <li>
+                            <Link className='link' to="/likebuttons">Like Buttons</Link>
                         </li>
                     </ul>
                 </div>
