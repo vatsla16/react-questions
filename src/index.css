@@ -89,4 +89,44 @@
   .accordion-container button {
     @apply cursor-pointer rounded-sm text-lg font-bold hover:underline;
   }
+
+  .segment {
+    @apply absolute w-[10px] h-[10px] opacity-10 rounded-sm bg-gray-100;
+  }
+
+  .segment.a {
+    @apply top-0 left-[5px] w-[30px] h-[6px];
+  }
+
+  .segment.b {
+    @apply top-[5px] right-0 w-[6px] h-[30px];
+  }
+
+  .segment.c {
+    @apply top-[37px] right-0 w-[6px] h-[30px];
+  }
+
+  .segment.d {
+    @apply top-[68px] left-[5px] w-[30px] h-[6px];
+  }
+
+  .segment.e {
+    @apply top-[37px] left-0 w-[6px] h-[30px];
+  }
+
+  .segment.f {
+    @apply top-[5px] left-0 w-[6px] h-[30px];
+  }
+
+  .segment.g {
+    @apply top-[31px] left-[5px] w-[30px] h-[6px];
+  }
+
+  .segment.active {
+    @apply bg-white opacity-100;
+  }
+
+  .blink {
+    @apply animate-ping;
+  }
 }

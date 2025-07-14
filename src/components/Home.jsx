@@ -66,6 +66,18 @@ export default function Home() {
                         <li>
                             <Link className='link' to="/likebuttons">Like Buttons</Link>
                         </li>
+                        <li>
+                            <Link className='link' to="/modaldialog">Modal Dialog</Link>
+                        </li>
+                        <li>
+                            <Link className='link' to="/starrating">Star Rating</Link>
+                        </li>
+                        <li>
+                            <Link className='link' to="/trafficlights">Traffic Lights</Link>
+                        </li>
+                        <li>
+                            <Link className='link' to="/digitalclock">Digital Clock</Link>
+                        </li>
                     </ul>
                 </div>
                 <div>

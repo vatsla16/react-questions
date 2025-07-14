@@ -23,6 +23,10 @@ const DataTable = React.lazy(() => import ('./components/medium/DataTable'));
 const RollDice = React.lazy(() => import ('./components/medium/RollDice'));
 const DirectoryTree = React.lazy(() => import ('./components/medium/DirectoryTree'));
 const LikeButtons = React.lazy(() => import ('./components/medium/LikeButtons'));
+const ModalDialog = React.lazy(() => import ('./components/medium/ModalDialog/ModalDialog'));
+const StarRating = React.lazy(() => import ('./components/medium/StarRating/StarRating'));
+const TrafficLights = React.lazy(() => import ('./components/medium/TrafficLights'));
+const DigitalClock = React.lazy(() => import ('./components/medium/DigitalClock'));
 
 function App() {
 
@@ -56,6 +60,10 @@ function App() {
             <Route path='/rolldice' element={<RollDice />} />
             <Route path='/directorytree' element={<DirectoryTree />} />
             <Route path='/likebuttons' element={<LikeButtons />} />
+            <Route path='/modaldialog' element={<ModalDialog />} />
+            <Route path='/starrating' element={<StarRating />} />
+            <Route path='/trafficlights' element={<TrafficLights />} />
+            <Route path='/digitalclock' element={<DigitalClock />} />
           </Routes>
         </Suspense>
       </main>
