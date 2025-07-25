@@ -27,6 +27,17 @@ const ModalDialog = React.lazy(() => import ('./components/medium/ModalDialog/Mo
 const StarRating = React.lazy(() => import ('./components/medium/StarRating/StarRating'));
 const TrafficLights = React.lazy(() => import ('./components/medium/TrafficLights'));
 const DigitalClock = React.lazy(() => import ('./components/medium/DigitalClock'));
+const TicTacToe = React.lazy(() => import ('./components/medium/TicTacToe'));
+const ImageCarousel = React.lazy(() => import ('./components/medium/ImageCarousel'));
+const JobBoard = React.lazy(() => import ('./components/medium/JobBoard'));
+const StopwatchMed = React.lazy(() => import ('./components/medium/StopwatchMed'));
+const TransferLists = React.lazy(() => import ('./components/medium/TransferLists'));
+const AccordionMed = React.lazy(() => import ('./components/medium/AccordionMed'));
+const AnalogClock = React.lazy(() => import ('./components/medium/AnalogClock'));
+const DataTableMed = React.lazy(() => import ('./components/medium/DataTableMed'));
+const GridLights = React.lazy(() => import ('./components/medium/GridLights'));
+const Histogram = React.lazy(() => import ('./components/medium/Histogram'));
+const ConnectFour = React.lazy(() => import ('./components/medium/ConnectFour'));
 
 function App() {
 
@@ -64,6 +75,17 @@ function App() {
             <Route path='/starrating' element={<StarRating />} />
             <Route path='/trafficlights' element={<TrafficLights />} />
             <Route path='/digitalclock' element={<DigitalClock />} />
+            <Route path='/tictactoe' element={<TicTacToe />} />
+            <Route path='/imagecarousel' element={<ImageCarousel />} />
+            <Route path='/jobboard' element={<JobBoard />} />
+            <Route path='/stopwatchmed' element={<StopwatchMed />} />
+            <Route path='/transferlists' element={<TransferLists />} />
+            <Route path='/accordionmed' element={<AccordionMed />} />
+            <Route path='/analogclock' element={<AnalogClock />} />
+            <Route path='/datatablemed' element={<DataTableMed />} />
+            <Route path='/gridlights' element={<GridLights />} />
+            <Route path='/histogram' element={<Histogram />} />
+            <Route path='/connectfour' element={<ConnectFour />} />
           </Routes>
         </Suspense>
       </main>

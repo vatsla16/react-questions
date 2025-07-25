@@ -55,18 +55,24 @@ export default function DigitalClock() {
             </div>
             <div className='card mb-4 text-center'>
                 {isValid ? (
-                    <div className="clock flex items-center justify-center">
-                        {current.hours.map((i, index) => (
-                            <SegmentDigits key={index} digit={i} />
-                        ))}
+                    <div className="clock flex flex-col sm:flex-row items-center justify-center gap-4">
+                        <div className="flex sm:flex-row">
+                            {current.hours.map((i, index) => (
+                                <SegmentDigits key={index} digit={i} />
+                            ))}
+                        </div>
                         <span className='blink font-bold text-2xl m-5'>:</span>
-                        {current.minutes.map((i, index) => (
-                            <SegmentDigits key={index} digit={i} />
-                        ))}
+                        <div className="flex sm:flex-row">
+                            {current.minutes.map((i, index) => (
+                                <SegmentDigits key={index} digit={i} />
+                            ))}
+                        </div>
                         <span className='blink font-bold text-2xl m-5'>:</span>
-                        {current.seconds.map((i, index) => (
-                            <SegmentDigits key={index} digit={i} />
-                        ))}
+                        <div className="flex sm:flex-row">
+                            {current.seconds.map((i, index) => (
+                                <SegmentDigits key={index} digit={i} />
+                            ))}
+                        </div>
                     </div>
                 ) : (
                     <div><Spinner /></div>

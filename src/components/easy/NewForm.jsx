@@ -29,9 +29,18 @@ export default function NewForm() {
             </div>
             <div className='card mb-4'>
                 <form onSubmit={handleSubmit}>
-                    <input type='text' className='px-4 py-2' value={data.username} name='username' onChange={handleChange} placeholder='Enter Username'/>
-                    <input type='text' className='px-4 py-2' value={data.name} name='name' onChange={handleChange} placeholder='Enter Full Name'/>
-                    <input type='number' className='px-4 py-2' value={data.age} name='age' onChange={handleChange}/>
+                    <label>
+                        Username: 
+                        <input type='text' className='px-4 py-2 mb-3 ml-2' value={data.username} name='username' onChange={handleChange} placeholder='Enter Username'/>
+                    </label><br/>
+                    <label>
+                        Full Name: 
+                        <input type='text' className='px-4 py-2 mb-3 ml-2' value={data.name} name='name' onChange={handleChange} placeholder='Enter Full Name'/>
+                    </label><br/>
+                    <label>
+                        Age: 
+                        <input type='number' className='px-4 py-2 mb-5 ml-2' value={data.age} name='age' onChange={handleChange}/>
+                    </label><br/>
                     <button type='submit' disabled={!isValid} className={`btn-background bg-blue-400 text-black ${!isValid ? 'opacity-50 cursor-not-allowed' : ''}`}>Submit</button>
                 </form>
                 

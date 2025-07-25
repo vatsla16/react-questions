@@ -33,14 +33,14 @@ export default function MortgageCalculator() {
             <div className='card mb-4'>
                 <p className="text-lg font-bold mb-4">Calculate your Mortgage: </p>
                 <form onSubmit={handleSubmit}>
-                    <label>Loan Amount: 
-                        <input className='ml-2 mb-4 p-2' min='0' type='number' onChange={(e) => setData(prev => ({...prev, loan: Number(e.target.value)}))} />
+                    <label>Loan Amount: <br/>
+                        <input className='mb-4 p-2' min='0' type='number' onChange={(e) => setData(prev => ({...prev, loan: Number(e.target.value)}))} />
                     </label><br/>
-                    <label>Annual Interest Rate (in %): 
-                        <input className='ml-2 mb-4 p-2' min='0' step='any' type='number' onChange={(e) => setData(prev => ({...prev, interest: Number(e.target.value)}))} />
+                    <label>Annual Interest Rate (in %): <br/>
+                        <input className='mb-4 p-2' min='0' step='any' type='number' onChange={(e) => setData(prev => ({...prev, interest: Number(e.target.value)}))} />
                     </label><br/>
-                    <label>Loan Term (in years): 
-                        <input className='ml-2 mb-4 p-2' min='0' type='number' onChange={(e) => setData(prev => ({...prev, term: Number(e.target.value)}))} />
+                    <label>Loan Term (in years): <br/>
+                        <input className='mb-4 p-2' min='0' type='number' onChange={(e) => setData(prev => ({...prev, term: Number(e.target.value)}))} />
                     </label><br/>
                     <button type='submit' className={`btn-background bg-green-400 text-black ${isValid ? 'opacity-100' : 'cursor-not-allowed opacity-50'}`} disabled={!isValid}>Calculate</button>
                 </form>

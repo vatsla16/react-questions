@@ -16,13 +16,13 @@ export default function RollDice() {
         return Array.from({length: dice}, (_, i) => i + 1).map(() => Math.floor(Math.random() * 6) + 1)
     }, [flag])
 
-    const handleChange = (e) => {
+    const handleChange = (num) => {
         if (!isValid && dice == '') {
             return;
         }
 
         setFlag(false)
-        setDice(() => Number(e.target.value))
+        setDice(parseInt(num))
     }
 
     return (
@@ -36,9 +36,9 @@ export default function RollDice() {
                 <div className="form flex items-center">
                     <label>
                         Number of Dice: 
-                        <input type="number" className='ml-2 p-2' value={dice} onChange={e => handleChange(e)} />
+                        <input type="number" className='ml-2 p-2' value={dice} onChange={e => handleChange(e.target.value)} />
                     </label>
-                    <button type='button' className='m-0 ml-3 btn-background text-black bg-green-400' onClick={() => setFlag(true)}>Roll</button>
+                    <button type='button' className={`m-0 ml-3 btn-background text-black bg-green-400 ${!isValid ? 'cursor-not-allowed opacity-50' : ''}`} onClick={() => setFlag(true)} disabled={!isValid}>Roll</button>
                 </div>
                 {!isValid ? <div className="text-red-400 mt-2">Numbers should be between 1 - 12 (inclusive)<br/></div> : <br />}
                 

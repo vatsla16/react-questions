@@ -17,11 +17,11 @@ export default function Flight() {
                 <form onSubmit={handleSubmit}>
                     <label>
                         Departure Date: 
-                        <input type="date" className='ml-2 mb-4' onChange={e => setFlight({...flight, departure: e.target.value})} />
+                        <input type="date" className='p-2 ml-2 mb-4' onChange={e => setFlight({...flight, departure: e.target.value})} />
                     </label><br />
                     <label>
                         Return Date: 
-                        <input type="date" className='ml-2 mb-4' onChange={e => setFlight({...flight, return: e.target.value})} />
+                        <input type="date" className='p-2 ml-2 mb-4' onChange={e => setFlight({...flight, return: e.target.value})} />
                     </label><br />
                     {(flight.departure > flight.return) && ( <span className="text-red-500 text-sm">Return date cannot be before departure date.<br/></span>)}
                     <button type='submit' className={`btn-background bg-green-300 text-black ${isValid ? 'opacity-100' : 'opacity-50 cursor-not-allowed'}`} disabled={!isValid}>Book</button>

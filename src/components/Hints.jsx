@@ -8,7 +8,7 @@ export default function Hints() {
             <div className="hint-title text-center" aria-expanded={flag} aria-controls='hint-control'>
                 <button type='button' className='cursor-pointer' onClick={() => setFlag(!flag)}>Hints <span className='text-sm text-gradient'>(Click to reveal)</span></button>
             </div>
-            <div className={`card hint-content ${ flag ? 'inline-block' : 'hidden'}`} id='hint-content'>
+            <div className={`card mt-2 hint-content ${ flag ? 'inline-block' : 'hidden'}`} id='hint-content'>
                 <div className="summary">
                     <table className='hint-table w-full table-auto border-collapse space-y-2'>
                         <thead>
